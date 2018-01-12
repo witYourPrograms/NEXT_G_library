@@ -1,8 +1,23 @@
 package com.company;
 
 public class User {
-    public void disp(String test)
+    int id;
+    String firstName;
+    String lastName;
+    int age;
+    int historyOfLoans;
+    String comment;
+    User(int id, String firstName, String lastName, int age, int historyOfLoans, String comment)
     {
-        System.out.println(test);
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.historyOfLoans = historyOfLoans;
+        this.comment = comment;
+    }
+    public String  getName()
+    {
+        return firstName.concat(" " + lastName);
     }
 }

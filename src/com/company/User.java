@@ -16,8 +16,4 @@ public class User {
         this.historyOfLoans = historyOfLoans;
         this.comment = comment;
     }
-    public String  getName()
-    {
-        return firstName.concat(" " + lastName);
-    }
 }
